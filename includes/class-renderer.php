@@ -120,7 +120,9 @@ final class Renderer {
 			[
 				'taxonomy'   => 'product_cat',
 				'parent'     => $parent->term_id,
-				'hide_empty' => true,
+				// Show configured sub-categories even when empty, so tabs visibility
+				// matches merchant taxonomy structure in the block settings.
+				'hide_empty' => false,
 			]
 		);
 
