@@ -2,8 +2,7 @@
 node_modules/
 vendor/
 
-# Build output (rebuilt from src/ — ship via plugin-zip, not via git)
-build/
+# Build output (committed so manual upload/activation works without Node)
 
 # Editor / OS
 .vscode/
