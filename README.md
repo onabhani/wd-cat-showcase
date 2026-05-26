@@ -14,8 +14,9 @@ the site.
 
 ## Status
 
-`v0.1.0` — scaffolded. Not yet built (`npm run build` required before
-activation). Not yet tested against a live Woodmart install.
+`v0.1.0` — scaffolded, with compiled `build/` assets committed so the plugin
+can be uploaded and activated without running a local Node build. Not yet
+tested against a live Woodmart install.
 
 ## Requirements
 
@@ -26,6 +27,15 @@ activation). Not yet tested against a live Woodmart install.
 | WooCommerce | active (warns if missing) |
 | Woodmart theme | recommended (graceful degrade if missing) |
 | Node (dev only) | 20+ |
+
+## Install (normal upload-and-activate)
+
+1. Download a release zip (or create one with `npm run plugin-zip`).
+2. In WordPress admin: **Plugins → Add New Plugin → Upload Plugin**.
+3. Upload zip and activate **Woodmart Category Showcase**.
+
+No Node/npm is required on the production server if you're installing from the
+zip artifact because compiled `build/` assets are included.
 
 ## Install (development)
 
