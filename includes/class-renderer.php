@@ -124,7 +124,11 @@ final class Renderer {
 			]
 		);
 
-		if ( is_wp_error( $children ) || empty( $children ) ) {
+		if ( is_wp_error( $children ) ) {
+			return '';
+		}
+
+		if ( empty( $children ) && ! $show_parent_first ) {
 			return '';
 		}
 
