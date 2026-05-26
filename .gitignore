@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build output (rebuilt from src/ — ship via plugin-zip, not via git)
+build/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Lockfiles (keep package-lock.json; ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# WordPress specific
+*.zip
+wp-cli.local.yml
+
+# Local env
+.env
+.env.local

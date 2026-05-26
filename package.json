@@ -1,0 +1,28 @@
+{
+  "name": "wd-cat-showcase",
+  "version": "0.1.0",
+  "description": "Dynamic Gutenberg block that wraps Woodmart's product block to render a category showcase section.",
+  "private": true,
+  "author": "Omar Alnabhani (hdqah)",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  },
+  "files": [
+    "wd-cat-showcase.php",
+    "block.json",
+    "includes",
+    "build",
+    "languages",
+    "readme.txt"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hdqah/wd-cat-showcase",
+  "version": "0.1.0",
+  "title": "Woodmart Category Showcase",
+  "category": "woocommerce",
+  "icon": "screenoptions",
+  "description": "Display a WooCommerce product category as a structured showcase section (label, title, view-all, child tabs, products) using Woodmart's native product grid.",
+  "keywords": ["woocommerce", "woodmart", "category", "showcase", "products"],
+  "textdomain": "wd-cat-showcase",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "categoryId": {
+      "type": "number",
+      "default": 0
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "showViewAll": {
+      "type": "boolean",
+      "default": true
+    },
+    "viewAllText": {
+      "type": "string",
+      "default": "عرض الكل ←"
+    },
+    "viewAllUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "showChildren": {
+      "type": "boolean",
+      "default": true
+    },
+    "showParentAsFirstTab": {
+      "type": "boolean",
+      "default": true
+    },
+    "parentTabLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "itemsPerPage": {
+      "type": "number",
+      "default": 4
+    },
+    "productSource": {
+      "type": "string",
+      "default": "bestselling",
+      "enum": ["bestselling", "recent_product", "featured_product", "sale_products"]
+    },
+    "orderby": {
+      "type": "string",
+      "default": "popularity"
+    },
+    "order": {
+      "type": "string",
+      "default": "DESC",
+      "enum": ["ASC", "DESC"]
+    },
+    "hideOutOfStock": {
+      "type": "boolean",
+      "default": true
+    },
+    "spacing": {
+      "type": "string",
+      "default": "16"
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}
